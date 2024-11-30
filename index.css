@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    text-decoration: none;
+}
+
+section {
+    min-height: 140vh;
+    background-image: url(ph/dk\ new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    
+    
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.logo {
+    position: fixed;
+    height: auto;
+    left: 10px;
+    width: 120px;
+    top: -25px;
+    bottom: 100px;
+}
+
+
+nav h1 {
+    float: left;
+    line-height: 80px;
+    font-size: 35px;
+    font-size: inline;
+    color: #eb7620;
+}
+
+nav ul {
+    float: right;
+    line-height: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+}
+
+nav ul li a:hover {
+    background-color: #eb7620;
+    transition: 0.5s ease;
+}
+
+nav ul li .actives {
+    background-color: #eb7620;
+}
+
+.articles {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+}
+
+.articles h1 {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.articles p {
+    font-size: 18px;
+    color: #2c2c2c;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    font-weight: 700;
+    float: left;
+    font-style: italic;
+}
+
+
+.articles .btn {
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f15048;
+    border-radius: 10px;
+}
+
+.articles .btn:hover {
+    background-color: rgba(228, 105, 5, 0.6);
+    transition: 0.5s ease;
+}
+
+/* Example Media Queries for responsiveness */
+@media only screen and (max-width: 1024px) {
+    section {
+        background-size: cover; /* Make sure the background covers the screen */
+    }
+    
+    .logo {
+        width: 20%;
+        left: -5px;
+        margin: 20px;
+        margin-left: -10px;
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack items vertically for tablets */
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 10px;
+    }
+    .articles{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        background-size: cover; /* Ensure it covers the screen even on mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        width: -100%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #3f3f3f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 0px;
+    border-top-left-radius:100px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+    color: rgba(247, 116, 10, 0.6);
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social .social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-social .social-icon:hover {
+    color: rgba(228, 105, 5, 0.6);
+}
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Responsive Footer */
+@media only screen and (max-width: 1024px) {
+    .footer-links ul li {
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .footer-social {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-social .social-icon {
+        font-size: 20px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}

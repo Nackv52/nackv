@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #e0dde0;
+    min-height: 150vh;
+    text-decoration: none;
+}
+
+header h1{
+    float: left;
+    line-height: 80px;
+    font-size: 35px;
+    font-size: inline;
+    color: #eb7620;
+    
+}
+header ul{
+    float: right;
+    line-height: 80px;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+header ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+header ul li a:hover{
+    background-color: #eb7620;
+    transition: 0.5s ease;
+
+}
+ header ul li .actives{
+    background-color: #eb7620;
+ }
+ 
+
+ /* -------footer----- */
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 10px 0; /* Padding for top and bottom of the footer */
+    text-align: center; /* Center align the text and content */
+    margin-top: 80vh; /* Space above the footer */
+    border-top-left-radius:100px;
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width of the footer container */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Padding on left and right */
+}
+
+.footer-links ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin-bottom: 20px; /* Space between the links and social media icons */
+}
+
+.footer-links ul li {
+    display: inline; /* Display the list items in a row */
+    margin: 0 15px; /* Space between the list items */
+}
+
+.footer-links ul li a {
+    color: white; /* White color for the links */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 16px; /* Font size for the links */
+}
+
+.footer-links ul li a:hover {
+    color: rgba(228, 105, 5, 0.6); /* Change link color on hover */
+}
+
+.footer-social {
+    margin-top: 20px; /* Space above the social icons */
+}
+
+.footer-social .social-icon {
+    color: white; /* White color for the icons */
+    margin: 0 10px; /* Space between the social media icons */
+    font-size: 24px; /* Size of the social media icons */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.footer-social .social-icon:hover {
+    color: #007BFF; /* Change icon color on hover */
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+ }
+
+
+.copyright {
+    margin-top: 20px; /* Space between the copyright text and the social media icons */
+    font-size: 14px; /* Smaller font size for the copyright text */
+    color: #aaa; /* Lighter gray color for copyright text */
+}
+
+/* Responsive Footer */
+@media only screen and (max-width: 1024px) {
+    .footer-links ul li {
+        margin-bottom: 10px; /* Space between the list items on smaller screens */
+        display: block; /* Stack list items vertically */
+        text-align: center; /* Center align the text for each list item */
+    }
+
+    .footer-social {
+        text-align: center; /* Center align the social media icons */
+        margin-top: 15px; /* Adjust space above the social media icons */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-social .social-icon {
+        font-size: 20px; /* Smaller social media icons on smaller screens */
+    }
+
+    .copyright {
+        font-size: 12px; /* Smaller font for the copyright text on mobile */
+    }
+}
+
